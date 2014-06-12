@@ -74,7 +74,8 @@ Return the Interval with the highest average number of steps.
 max.val <- max(average_per_interval)
 max.loc <- which.max(average_per_interval)
 
-#Find the interval where max occurs and convert to form "hh:mm - hh:mm""
+#I'm taking an extra few steps here to find the start and end of the max interval
+#and display it in the form "hh:mm - hh:mm."
 intervals <- levels(factor(good_data$interval))
 max.interval <- intervals[max.loc]
 max.interval <- c(as.numeric(max.interval), as.numeric(max.interval) + 5)

@@ -49,7 +49,7 @@ print(xt, type="html",include.rownames=FALSE)
 ```
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Thu Jun 12 21:26:45 2014 -->
+<!-- Thu Jun 12 21:40:12 2014 -->
 <TABLE border=1>
 <TR> <TH> mean </TH> <TH> median </TH>  </TR>
   <TR> <TD align="right"> 10766.19 </TD> <TD align="right"> 10765 </TD> </TR>
@@ -90,7 +90,8 @@ Return the Interval with the highest average number of steps.
 max.val <- max(average_per_interval)
 max.loc <- which.max(average_per_interval)
 
-#Find the interval where max occurs and convert to form "hh:mm - hh:mm""
+#I'm taking an extra few steps here to find the start and end of the max interval
+#and display it in the form "hh:mm - hh:mm."
 intervals <- levels(factor(good_data$interval))
 max.interval <- intervals[max.loc]
 max.interval <- c(as.numeric(max.interval), as.numeric(max.interval) + 5)
@@ -105,7 +106,7 @@ print(xt, type="html",include.rownames=FALSE)
 ```
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Thu Jun 12 21:26:45 2014 -->
+<!-- Thu Jun 12 21:40:12 2014 -->
 <TABLE border=1>
 <TR> <TH> interval </TH> <TH> steps </TH>  </TR>
   <TR> <TD> 08:35 - 08:40 </TD> <TD align="right"> 206.17 </TD> </TR>
@@ -167,7 +168,7 @@ print(xt, type="html")
 ```
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Thu Jun 12 21:26:46 2014 -->
+<!-- Thu Jun 12 21:40:13 2014 -->
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> mean </TH> <TH> median </TH>  </TR>
   <TR> <TD align="right"> Old </TD> <TD align="right"> 10766.19 </TD> <TD align="right"> 10765.00 </TD> </TR>

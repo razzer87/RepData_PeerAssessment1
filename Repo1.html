@@ -223,7 +223,7 @@ print(xt, type=&quot;html&quot;,include.rownames=FALSE)
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
 
-<!-- Thu Jun 12 21:26:45 2014 -->
+<!-- Thu Jun 12 21:40:12 2014 -->
 
 <TABLE border=1>
 <TR> <TH> mean </TH> <TH> median </TH>  </TR>
@@ -259,7 +259,8 @@ axis(1, at=seq(from = 0, to = 288, by = 12), labels=times, pos=-8.5, las=0)
 max.val &lt;- max(average_per_interval)
 max.loc &lt;- which.max(average_per_interval)
 
-#Find the interval where max occurs and convert to form &quot;hh:mm - hh:mm&quot;&quot;
+#I&#39;m taking an extra few steps here to find the start and end of the max interval
+#and display it in the form &quot;hh:mm - hh:mm.&quot;
 intervals &lt;- levels(factor(good_data$interval))
 max.interval &lt;- intervals[max.loc]
 max.interval &lt;- c(as.numeric(max.interval), as.numeric(max.interval) + 5)
@@ -275,7 +276,7 @@ print(xt, type=&quot;html&quot;,include.rownames=FALSE)
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
 
-<!-- Thu Jun 12 21:26:45 2014 -->
+<!-- Thu Jun 12 21:40:12 2014 -->
 
 <TABLE border=1>
 <TR> <TH> interval </TH> <TH> steps </TH>  </TR>
@@ -330,7 +331,7 @@ print(xt, type=&quot;html&quot;)
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
 
-<!-- Thu Jun 12 21:26:46 2014 -->
+<!-- Thu Jun 12 21:40:13 2014 -->
 
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> mean </TH> <TH> median </TH>  </TR>
