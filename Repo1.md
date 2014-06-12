@@ -16,7 +16,7 @@ data <- read.csv(unz(temp,"activity.csv"))
 unlink(temp)
 ```
 
-Next, a version of the file is made without the NA values in "steps.""
+Next, a version of the file is made without the NA values in "steps."
 
 
 ```r
@@ -49,7 +49,7 @@ print(xt, type="html",include.rownames=FALSE)
 ```
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Thu Jun 12 01:33:43 2014 -->
+<!-- Thu Jun 12 01:49:32 2014 -->
 <TABLE border=1>
 <TR> <TH> mean </TH> <TH> median </TH>  </TR>
   <TR> <TD align="right"> 10766.19 </TD> <TD align="right"> 10765 </TD> </TR>
@@ -105,7 +105,7 @@ print(xt, type="html",include.rownames=FALSE)
 ```
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Thu Jun 12 01:33:43 2014 -->
+<!-- Thu Jun 12 01:49:32 2014 -->
 <TABLE border=1>
 <TR> <TH> interval </TH> <TH> steps </TH>  </TR>
   <TR> <TD> 08:35 - 08:40 </TD> <TD align="right"> 206.17 </TD> </TR>
@@ -153,7 +153,7 @@ hist(totals2,col = "blue", main = "Fixed data", xlab = "Number of Steps", breaks
 
 ![plot of chunk histogram 2](figure/histogram 2.png) 
 
-Note that the Frequency is now higher for each bar and the jump is bigger as we get closer to the mean. This is because we are adding more values to the plot. Since the avlues we are adding are the mean per interval, the figures are skewed towards the overall mean.
+Note that the Frequency is now higher for each bar and the jump is bigger as we get closer to the mean. This is because we are adding more values to the plot. Since the values we are adding are the mean per interval, the figures are skewed towards the overall mean.
 
 Now we will find the new mean and medians.
 
@@ -167,7 +167,7 @@ print(xt, type="html")
 ```
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Thu Jun 12 01:33:44 2014 -->
+<!-- Thu Jun 12 01:49:32 2014 -->
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> mean </TH> <TH> median </TH>  </TR>
   <TR> <TD align="right"> Old </TD> <TD align="right"> 10766.19 </TD> <TD align="right"> 10765.00 </TD> </TR>

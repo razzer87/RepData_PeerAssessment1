@@ -16,7 +16,7 @@ unlink(temp)
 
 ```
 
-Next, a version of the file is made without the NA values in "steps.""
+Next, a version of the file is made without the NA values in "steps."
 
 ```{r Making Good Data}
 good_data <- subset(data,data$steps!="NA")

@@ -194,7 +194,7 @@ data &lt;- read.csv(unz(temp,&quot;activity.csv&quot;))
 unlink(temp)
 </code></pre>
 
-<p>Next, a version of the file is made without the NA values in &ldquo;steps.&rdquo;&ldquo;</p>
+<p>Next, a version of the file is made without the NA values in &ldquo;steps.&rdquo;</p>
 
 <pre><code class="r">good_data &lt;- subset(data,data$steps!=&quot;NA&quot;)
 </code></pre>
@@ -223,7 +223,7 @@ print(xt, type=&quot;html&quot;,include.rownames=FALSE)
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
 
-<!-- Thu Jun 12 01:33:43 2014 -->
+<!-- Thu Jun 12 01:49:32 2014 -->
 
 <TABLE border=1>
 <TR> <TH> mean </TH> <TH> median </TH>  </TR>
@@ -275,7 +275,7 @@ print(xt, type=&quot;html&quot;,include.rownames=FALSE)
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
 
-<!-- Thu Jun 12 01:33:43 2014 -->
+<!-- Thu Jun 12 01:49:32 2014 -->
 
 <TABLE border=1>
 <TR> <TH> interval </TH> <TH> steps </TH>  </TR>
@@ -317,7 +317,7 @@ hist(totals2,col = &quot;blue&quot;, main = &quot;Fixed data&quot;, xlab = &quot
 
 <p><img src="data:image/png;base64,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" alt="plot of chunk histogram 2"/> </p>
 
-<p>Note that the Frequency is now higher for each bar and the jump is bigger as we get closer to the mean. This is because we are adding more values to the plot. Since the avlues we are adding are the mean per interval, the figures are skewed towards the overall mean.</p>
+<p>Note that the Frequency is now higher for each bar and the jump is bigger as we get closer to the mean. This is because we are adding more values to the plot. Since the values we are adding are the mean per interval, the figures are skewed towards the overall mean.</p>
 
 <p>Now we will find the new mean and medians.</p>
 
@@ -330,7 +330,7 @@ print(xt, type=&quot;html&quot;)
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
 
-<!-- Thu Jun 12 01:33:44 2014 -->
+<!-- Thu Jun 12 01:49:32 2014 -->
 
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> mean </TH> <TH> median </TH>  </TR>
